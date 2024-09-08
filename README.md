@@ -20,7 +20,25 @@ Clone the repository using the following command
 
 ```
 
+### Step 3:  Running the Application
+Android
+To run the application on Android:
 
+```bash
+
+ npx react-native run-android
+
+```
+iOS
+To run the application on iOS: 
+
+```bash
+
+ npm start
+
+```
+
+## Npm
 
 The link to my created npm package is : [https://www.npmjs.com/package/validator-phone-number ](https://www.npmjs.com/package/validator-phone-number) 
 
