@@ -10,7 +10,9 @@ Clone the repository using the following command
 
 
 ```bash
-git clone [https://github.com/ferhatyyaman/Phone-number-app.git](https://github.com/ferhatyyaman/Phone-number-app)
+
+git clone [[https://github.com/ferhatyyaman/Phone-number-app.git](https://github.com/ferhatyyaman/Phone-number-app.git)]
+
 ```
 
 The link to my created npm package is : [https://www.npmjs.com/package/validator-phone-number ](https://www.npmjs.com/package/validator-phone-number) 
