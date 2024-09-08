@@ -5,15 +5,22 @@
 Before running the application, make sure you have completed the React Native environment setup and have created a new React Native project using @react-native-community/cli. Once you have set up your project, follow these steps:
 
 ### Step 1: Clone the repository
-
 Clone the repository using the following command
-
 
 ```bash
 
- git clone https://github.com/ferhatyyaman/Phone-number-app.git
+ git clone https://github.com/ferhatyyaman/Phone-number-app
 
 ```
+### Step 2:  Install dependencie
+
+```bash
+
+ npm install
+
+```
+
+
 
 The link to my created npm package is : [https://www.npmjs.com/package/validator-phone-number ](https://www.npmjs.com/package/validator-phone-number) 
 
