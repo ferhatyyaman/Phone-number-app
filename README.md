@@ -7,7 +7,7 @@ Before running the application, make sure you have completed the React Native en
 The link to my created npm package is : [https://www.npmjs.com/package/validator-phone-number ](https://www.npmjs.com/package/validator-phone-number) 
 
 
-Install the tckn-validator package using npm or Yarn:
+Install the validator-phone-number package using npm or Yarn:
 
 ```bash
 # using npm
