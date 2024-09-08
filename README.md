@@ -21,21 +21,24 @@ Clone the repository using the following command
 ```
 
 ### Step 3:  Running the Application
-Android
-To run the application on Android:
+
+#### For Android
 
 ```bash
+# using npm
+npm run android
 
- npx react-native run-android
-
+# OR using Yarn
+yarn android
 ```
-iOS
-To run the application on iOS: 
+#### For iOS
 
 ```bash
+# using npm
+npm run ios
 
- npm start
-
+# OR using Yarn
+yarn ios
 ```
 
 ## Npm
