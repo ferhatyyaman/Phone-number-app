@@ -8,10 +8,10 @@ Before running the application, make sure you have completed the React Native en
 
 Clone the repository using the following command
 
-git clone
+
 ```bash
 
- [https://github.com/ferhatyyaman/Phone-number-app.git ](https://github.com/ferhatyyaman/Phone-number-app.git) 
+ git clone https://github.com/ferhatyyaman/Phone-number-app.git
 
 ```
 
