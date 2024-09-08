@@ -11,7 +11,7 @@ Clone the repository using the following command
 
 ```bash
 
-git clone [[https://github.com/ferhatyyaman/Phone-number-app.git](https://github.com/ferhatyyaman/Phone-number-app.git)]
+git clone [https://github.com/ferhatyyaman/Phone-number-app.git](https://github.com/ferhatyyaman/Phone-number-app.git)
 
 ```
 
