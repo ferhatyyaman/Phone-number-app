@@ -1,127 +1,37 @@
-import React, { useState } from 'react';
+import * as React from 'react';
 
-import {
-  Button,
-  StyleSheet,
-  TextInput,
-  View,
-  Text,
-  Image,
-  TouchableOpacity
-} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import validatePhoneNumber from 'validator-phone-number';
 
-export default function App() {
+import HomeScreen from './Screens/HomeScreen';
+import PhoneValidationScreen from './Screens/PhoneValidationScreen';
 
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [result, setResult] = useState(null);
+const Stack = createNativeStackNavigator();
 
-  const handleValidation = () => {
-    const validationResult = validatePhoneNumber(phoneNumber);
-    setResult(validationResult);
-  };
+function App() {
 
   return (
-    <View style={styles.container}>
-
-      <Text style={styles.headerText}>Telefon Numarası Doğrulama</Text>
-      
-      <Image style={styles.logo} source={{uri:"https://cdn-icons-png.freepik.com/256/4755/4755330.png?semt=ais_hybrid"}} />
-      <View style={styles.inputContainer}>
-          <Image style={styles.trlogo} source={{uri:"https://cdn-icons-png.flaticon.com/128/5111/5111548.png"}} />
-
-          <TextInput
-            style={styles.input}
-            placeholder="(05xx) xxx xx xx"
-            keyboardType="numeric"
-            value={phoneNumber}
-            onChangeText={setPhoneNumber}
-          />  
-      </View>
-
-      <TouchableOpacity style={styles.button} onPress={handleValidation}>
-      <Text style={styles.buttonText}>Doğrula</Text>
-      </TouchableOpacity>
-
-      {result && (
-        result.isValid ? (
-          <Text style={styles.valid}>{result.message}</Text>
-        ) : (
-          <View>
-            <Text style={styles.invalid}>{result.message}</Text>
-          </View>
-        )
-      )}
- 
-    </View>
+    <NavigationContainer>
+    <Stack.Navigator initialRouteName="HomeScreen">
+      <Stack.Screen
+        name="HomeScreen"
+        component={HomeScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="PhoneValidationScreen"
+        component={PhoneValidationScreen}
+        options={{ title: '',headerShadowVisible: false,
+        headerStyle: {
+          backgroundColor: '#f0f4f7', 
+          
+          
+        },
+      }}
+      />
+    </Stack.Navigator>
+  </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems:"center",
-    padding: 16,
-    backgroundColor: '#f0f4f7',
-   paddingBottom:40,
-  },
-  headerText: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-  },
-  inputContainer:{
-    borderWidth: 1,
-    borderColor: '#ccc',
-    flexDirection:"row",
-    justifyContent: 'center',
-    alignItems:"center",
-    width: '90%',
-    borderRadius: 4,
-    marginTop: 20,
-  },
-  input:{
-    flex:1,
-    borderWidth: 1,
-    borderColor: '#ccc',
-    padding: 8,
-    borderRadius: 4,
-  },
-  button:{
-    marginTop: 16,
-    width: '90%',
-    backgroundColor: '#007bff',
-    padding: 10,
-    borderRadius: 4,
-    alignItems: 'center',
-    marginBottom: 20,
-  },
-  buttonText: {
-    color: '#fff',
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-  logo: {
-    justifyContent: 'center',
-    alignItems:"center",
-    width: 200,
-    height: 200,
-    marginBottom: 50,
-  },
-  trlogo:{
-    width: 40,
-    height: 40,
-    marginLeft:5,
-    marginRight:5,
-  },
-  valid: {
-    color: 'green',
-    marginTop: 16,
-  },
-  invalid: {
-    color: 'red',
-    marginTop: 16,
-  },
-});
+export default App;
