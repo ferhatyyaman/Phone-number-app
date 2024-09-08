@@ -8,7 +8,7 @@ The link to my created npm package is : [https://www.npmjs.com/package/validator
 
 
 
-[![NPM](https://img.shields.io/npm/v/validator-phone-number.svg)(https://www.npmjs.com/package/validator-phone-number)
+[![NPM](https://img.shields.io/npm/v/validator-phone-number.svg)](https://www.npmjs.com/package/validator-phone-number)
 
 Install the validator-phone-number package using npm or Yarn:
 
