@@ -5,6 +5,9 @@
 Before running the application, make sure you have completed the React Native environment setup and have created a new React Native project using @react-native-community/cli. Once you have set up your project, follow these steps:
 
 The link to my created npm package is : [https://www.npmjs.com/package/validator-phone-number ](https://www.npmjs.com/package/validator-phone-number) 
+
+
+
 [![NPM](https://img.shields.io/npm/v/validator-phone-number.svg)(https://www.npmjs.com/package/validator-phone-number)
 
 Install the validator-phone-number package using npm or Yarn:
